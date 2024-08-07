@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="vista/imagenes/logo2.png">
+    <title>Recuerdos </title>
+    <link rel="stylesheet" href="vista/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/919e73493b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            transition: 0.5s;
+        }
+
+        html, body {
+    /* Elimina overflow: hidden; */
+    height: auto;
+    /* overflow: hidden; */ /* Elimina esta línea */
+}
+
+
+        #titulo {
+            color: #3d006e;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+
+        body {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover; /* Cambia a cover */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 0.5s;
+    overflow-y: auto;
+}
+
+
+
+.container {
+    position: relative;
+    z-index: 2;
+    min-height: 100vh; /* Asegura que .container tenga al menos la altura de la ventana del navegador */
+}
+
+
+        .card {
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card .image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card .layer {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        }
+
+        .card .card-body {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .card:hover .card-body {
+            opacity: 1;
+        }
+
+        .card-title, .card-text {
+            color: #000000;
+            background-color: #ffffff9d;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+  <!-- Barra de navegacion -->  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="vista/imagenes/logo2.png" alt="logo" style="width: 100px;" style="background-color: black;"&nbsp;&nbsp;>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#" style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alice (La teodora)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html" style="color: white;"><i class="fa-solid fa-house">&nbsp;</i>Inicio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Recuerdos.html" style="color: white;"><i class="fa-solid fa-camera-retro">&nbsp;</i>Recuerdos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Videos.html" style="color: white;"><i class="fa-solid fa-film">&nbsp;</i>Pendiente</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--Fin de Barra de navegacion -->  
+      <div class="container">
+        <h1 id="titulo"> Recuerdos </h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-4 col-lg-3 mb-5">
+                <div class="card" data-bg="vista/imagenes/alice11.jpg">
+                    <img src="vista/imagenes/alice11.jpg" class="image card-img-top" alt="The King of Fighters">
+                    <div class="card-body layer">
+                        <h5 class="card-title">Zocalo </h5>
+                        <p class="card-text">Mi primera vez en temporada de navidad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-5">
+                <div class="card" data-bg="vista/imagenes/alice9.jpg">
+                    <img src="vista/imagenes/alice9.jpg" class="image card-img-top" alt="Super Smash Bros">
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casa </h5>
+                        <p class="card-text">Cumpleaños de mi abuela </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-5">
+                <div class="card" data-bg="vista/imagenes/alice20.jpg">
+                    <img src="vista/imagenes/alice20.jpg" class="image card-img-top" alt="Mortal Kombat 1">
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casita </h5>
+                        <p class="card-text">Mi primir Año Nuevo </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-5">
+                <div class="card" data-bg="vista/imagenes/alice18.jpg">
+                    <img src="vista/imagenes/alice18.jpg" class="image card-img-top" alt="Mortal Kombat 11">
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casita</h5>
+                        <p class="card-text">Cumpleaños de mi abuelito </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-5">
+                <div class="card" data-bg="vista/imagenes/alice22.jpg">
+                    <img src="vista/imagenes/alice22.jpg" class="image card-img-top" alt="FC24">
+                    <div class="card-body layer">
+                        <h5 class="card-title">Baby shower</h5>
+                        <p class="card-text">Aqui todavia ni nacia pero estaba en la panza de mi ama </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-5">
+              <div class="card" data-bg="vista/imagenes/alice23.jpg">
+                  <img src="vista/imagenes/alice23.jpg" class="image card-img-top" alt="Super Smash Bros">
+                  <div class="card-body layer">
+                      <h5 class="card-title">Casita</h5>
+                      <p class="card-text">Aqui estaba hablando con mi novio pero ssssshhhhh</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mb-5">
+            <div class="card" data-bg="vista/imagenes/alice24.jpg">
+                <img src="vista/imagenes/alice24.jpg" class="image card-img-top" alt="Super Smash Bros">
+                <div class="card-body layer">
+                    <h5 class="card-title">Casita</h5>
+                    <p class="card-text">Aqui estaba enojada por que no me dejaron hablar con mi novio </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-3 mb-5">
+          <div class="card" data-bg="vista/imagenes/alice25.jpg">
+              <img src="vista/imagenes/alice25.jpg" class="image card-img-top" alt="Super Smash Bros">
+              <div class="card-body layer">
+                  <h5 class="card-title">Zocalo</h5>
+                  <p class="card-text">Aqui disfrutando de las vistas del zocalo (Estaba viendo a un niño )</p>
+              </div>
+          </div>
+      </div>
+        </div>
+    </div>
+     
+    <!-- Pie de pagina -->  
+    <footer class="text-center bg-body-tertiary" style="background-color: black;">    
+        <div class="text-center p-3" style="background-color: #000000; color: white;">
+            
+          © 2024 KondeGaming
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    const bgImage = this.getAttribute('data-bg');
+                    document.body.style.backgroundImage = `url(${bgImage})`;
+                });
+
+                card.addEventListener('mouseleave', function() {
+                    document.body.style.backgroundImage = 'none';
+                });
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="vista/Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

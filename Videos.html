@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="vista/imagenes/logo2.png">
+    <title>Videos</title>
+    <link rel="stylesheet" href="vista/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vista/css/estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://kit.fontawesome.com/919e73493b.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            transition: 0.5s;
+        }
+
+        html, body {
+            height: auto;
+            width: auto;
+        }
+
+        #titulo {
+            color: #2997dc;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: background-image 0.5s;
+            overflow-y: auto;
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            min-height: 100vh;
+        }
+
+        .card {
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .video-card {
+            position: relative;
+            overflow: hidden;
+            height: 200px; /* Ajusta la altura según sea necesario */
+        }
+
+        .video-card video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la proporción del video sin distorsionar */
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-title, .card-text {
+            color: #000000;
+            background-color: #ffffff9d;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .bg-green { background-color: green; }
+        .bg-blue { background-color: blue; }
+        .bg-red { background-color: red; }
+        .bg-yellow { background-color: #555a13; }
+        .bg-purple { background-color: purple; }
+        .bg-orange { background-color: orange; }
+        .bg-pink { background-color: #c34f62; }
+        .bg-teal { background-color: #7045068f; }
+    </style> 
+</head>
+<body>
+    <!-- Barra de navegación -->  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="background-color: black;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="vista/imagenes/logo2.png" alt="logo" style="width: 100px;" style="background-color: black;">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#" style="color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alice (La teodora) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;"><i class="fa-solid fa-house">&nbsp;</i>Inicio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recuerdos.html" style="color: white;"><i class="fa-solid fa-camera-retro">&nbsp;</i>Recuerdos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Videos.html" style="color: white;"><i class="fa-solid fa-film">&nbsp;</i>Pendiente</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de Barra de navegación --> 
+
+    <div class="container">
+        <h1 id="titulo">Videos</h1>
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card bg-green">
+                    <div class="video-card">
+                        <video controls>
+                            <source src="vista/videos/alice1.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casita </h5>
+                        <p class="card-text">Bla bla </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card bg-blue">
+                    <div class="video-card">
+                        <video controls>
+                            <source src="vista/videos/alice2.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casita </h5>
+                        <p class="card-text">Hechando Pleito </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card bg-red">
+                    <div class="video-card">
+                        <video controls>
+                            <source src="vista/videos/alice3.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="card-body layer">
+                        <h5 class="card-title">Casita </h5>
+                        <p class="card-text">Perreo Intenso </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card bg-purple">
+                    <div class="video-card">
+                        <video controls>
+                            <source src="vista/videos/alice4.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="card-body layer">
+                        <h5 class="card-title">Mi Cumpleaños</h5>
+                        <p class="card-text">Mis primeras Mañanitas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card bg-yellow">
+                    <div class="video-card">
+                        <video controls>
+                            <source src="vista/videos/alice5.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="card-body layer">
+                        <h5 class="card-title">1er Año</h5>
+                        <p class="card-text">Video Recuerdos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->  
+    <footer class="text-center bg-body-tertiary" style="background-color: black;">    
+        <div class="text-center p-3" style="background-color: #000000; color: white;">
+            <br>
+            © 2024 KondeGaming
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.
